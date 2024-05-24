@@ -4,6 +4,7 @@ import { SiMongodb } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa6";
 import { SiExpress } from "react-icons/si";
 import { motion } from "framer-motion";
+import { RiTailwindCssFill } from "react-icons/ri";
 function Technologies() {
   return (
     <div className="border-b border-neutral-800 pb-24">
@@ -32,6 +33,9 @@ function Technologies() {
         </div>
         <div className="rounded-2xl border-4 animate-bounce border-neutral-800 p-4">
           <FaBootstrap className="text-7xl text-purple-600" />
+        </div>
+        <div className="rounded-2xl border-4 animate-bounce border-neutral-800 p-4">
+          <RiTailwindCssFill className="text-7xl text-cyan-400" />
         </div>
       </div>
     </div>
