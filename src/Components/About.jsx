@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import aboutImg from "../assets/vedu2.jpg";
+import aboutImg from "../assets/vedu.jpg";
 // import { IoLogoGithub } from "react-icons/io";
 function About() {
   return (

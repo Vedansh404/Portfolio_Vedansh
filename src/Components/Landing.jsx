@@ -1,11 +1,11 @@
-import veduImage from "../assets/vedu.jpg";
+import veduImage from "../assets/vedu2.jpg";
 import { motion } from "framer-motion";
 
 function Landing() {
   return (
     <section className="flex border-b border-neutral-900 pb-4 " id="landing">
-      <div className="grid  px-4 py-4 mx-auto md:py-16 lg:grid-cols-12">
-        <div className="place-self-center md:col-span-7">
+      <div className="grid px-4 py-4 m-auto md:py-16 md:grid-cols-12">
+        <div className="place-self-center md:col-span-7 mt-16">
           <motion.p
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -36,7 +36,10 @@ function Landing() {
             transition={{ duration: 0.5, delay: 1 }}
             className="max-w-3xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
           >
-            {`Hi there!, My name is Vedansh Rashinkar, I secured AIR 3 in NIMCET 2022 and currently I'm pursuing my Master in Computer Applications
+            {`Hi there!, My name is Vedansh Rashinkar, I secured`}{" "}
+            <span className="text-lime-500 font-bold">AIR 3</span> {`in`}{" "}
+            <span className="text-lime-500 font-bold">NIMCET 2022</span>{" "}
+            {`and currently I'm pursuing my Master in Computer Applications
             from NIT, Tiruchirappalli.`}
           </motion.p>
           <div className="text-center  md:w-full pb-5">
@@ -71,12 +74,12 @@ function Landing() {
           </div>
         </div>
 
-        <div className="md:mt-2 md:col-span-5 md:flex mx-auto">
+        <div className="md:mt-12 md:col-span-5 md:flex mx-auto ">
           <motion.img
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.75 }}
-            className="object-cover shadow-2xl rounded-full md:w-96 md:h-96 md:m-14 "
+            className="object-cover shadow-2xl mt-3 rounded-full w-96 max-md:h-[345px] h-96 md:mb-14 "
             src={veduImage}
             alt="Vedansh Rashinkar"
           />
