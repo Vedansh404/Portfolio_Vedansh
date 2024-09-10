@@ -15,7 +15,7 @@ function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <div className="w-full fixed top-0 left-0">
+    <div className="w-full fixed top-0 left-0 z-10">
       <div className="md:flex items-center justify-between py-4 md:px-10 px-7">
         <div className="font-bold text-white text-2xl cursor-pointer flex items-center">
           <a href="/" className="text-zinc-200">
@@ -33,7 +33,7 @@ function Navbar() {
             </div>
             <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
               <div
-                className="absolute top-0 right-0 px-8 py-8"
+                className="absolute top-0 right-0 px-8 py-8 "
                 onClick={() => setIsNavOpen(false)}
               >
                 <svg
@@ -98,6 +98,7 @@ function Navbar() {
       <style>{`
       .hideMenuNav {
         display: none;
+        
       }
       .showMenuNav {
         display: block;
@@ -119,28 +120,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-{
-  /* <button className="relative group">
-              <div className="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md">
-                <div className="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden">
-                  <div className="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10"></div>
-                  <div className="bg-white h-[2px] w-7 rounded transform transition-all duration-300 group-focus:translate-x-10 delay-75"></div>
-                  <div className="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10 delay-150"></div>
-
-                  <div className="absolute items-center justify-between transform transition-all duration-500 top-2.5 -translate-x-10 group-focus:translate-x-0 flex w-0 group-focus:w-12">
-                    <div className="absolute bg-white h-[2px] w-5 transform transition-all duration-500 rotate-0 delay-300 group-focus:rotate-45"></div>
-                    <div className="absolute bg-white h-[2px] w-5 transform transition-all duration-500 -rotate-0 delay-300 group-focus:-rotate-45"></div>
-                  </div>
-                </div>
-              </div>
-            </button> */
-}
-
-{
-  /* <div id="mobile-menu-button" className="group">
-              <div className="group-open:rotate-45 top-0 h-1 w-8 rounded-full bg-zinc-200 "></div>
-              <div className="top-0 h-1 w-8 rounded-full bg-zinc-200  mt-1"></div>
-              <div className=" top-0 h-1 w-8 rounded-full bg-zinc-200 mt-1"></div>
-            </div> */
-}
