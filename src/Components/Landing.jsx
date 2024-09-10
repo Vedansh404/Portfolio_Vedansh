@@ -50,7 +50,7 @@ function Landing() {
               transition={{ duration: 0.5, delay: 1.25 }}
             >
               <a
-                href="https://drive.google.com/file/d/1_seKdMxhWmPnQAc9qqTGh5bessx88QQn/view?usp=sharing"
+                href="https://drive.google.com/file/d/1N6Z4-I6xUv1pmGNLblauwxYcKbgyVIjV/view?usp=sharing"
                 target="_blank"
                 className="text-zinc-200  max-md:p-1 md:m-4  hover:bg-blue-700  font-bold py-2 px-4 rounded-full border border-blue-500 shadow-md transition duration-300 ease-in-out transform hover:scale-105 "
               >
