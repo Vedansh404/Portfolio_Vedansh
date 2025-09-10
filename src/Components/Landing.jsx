@@ -39,7 +39,7 @@ function Landing() {
             {`Hi there!, My name is Vedansh Rashinkar, I secured`}{" "}
             <span className="text-lime-500 font-bold">AIR 3</span> {`in`}{" "}
             <span className="text-lime-500 font-bold">NIMCET 2022</span>{" "}
-            {`and currently I'm pursuing my Master in Computer Applications
+            {`and I've completed my Master in Computer Applications
             from NIT, Tiruchirappalli.`}
           </motion.p>
           <div className="text-center  md:w-full pb-5">
